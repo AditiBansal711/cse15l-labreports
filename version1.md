@@ -1,2 +1,2 @@
 Hi there!
-** THIS IS CSE 15L LAB **
+**THIS IS CSE 15L LAB**
