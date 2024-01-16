@@ -20,7 +20,7 @@ Directory After Command Execution: /home/lecture1/messages/
 When cd is used with a folder as an argument, the working directory is 
 changed to the specified folder.
 
-### 2. Using cd with a file as an argument
+### 2. Using 'cd' with a file as an argument
 
 Working directory is /home/lecture1/messages/
 ```
