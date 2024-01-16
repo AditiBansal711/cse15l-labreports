@@ -149,7 +149,7 @@ Working directory is /home/lecture1/
 
 When cat is used with no arguments,it is not valid or seems to do nothing.
 
-The key combination Ctrl+C acts as an interrupt and breaks out of this loop.
+The key combination Ctrl+C acts as an interrupt and breaks it out of the loop.
 
 
 
