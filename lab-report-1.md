@@ -6,31 +6,37 @@ cd - 'change directory'
 1. Using cd with a folder as an argument
     
 
-Working directory is /home/lecture1 and is being changed into /home/lecture1/messages/
+Working directory is /home/lecture1 
+Directory After Command Execution: /home/lecture1/messages/
 ```
 [user@sahara ~/lecture1]$ cd messages
 [user@sahara ~/lecture1/messages]$ pwd
 /home/lecture1/messages
 ```
-When cd is used with a folder as an argument, the working directory is changed to the specified folder.
+When cd is used with a folder as an argument, the working directory is 
+changed to the specified folder.
 
 2. Using cd with a file as an argument
 
 Working directory is /home/lecture1/messages/
 ```
 [user@sahara ~/lecture1/messages]$ cd en-us.txt 
-  bash: cd: en-us.txt: Not a directory
+bash: cd: en-us.txt: Not a directory
 ```
- Attempting to use 'cd' with a file as an argument results in an error as
-'cd' is designed to change directories, and specifying a file as an argument is not valid.
+When 'cd' is used with a file as an argument results in an error as
+'cd' is designed to change directories,
+and specifying a file as an argument is not valid.
 
+3. Using 'cd' without an arguement
 
+Working directory: /home/lecture1/messages/ 
+Directory After Command Execution: /home/
+```
+[user@sahara ~/lecture1/messages]$ cd
+[user@sahara ~]$ pwd
+/home
+  ```
 When cd is used without any arguments, the working directory is changed to /home.
-Working directory is /home/lecture1/messages/ and is being changed into /home/
-
-  [user@sahara ~/lecture1/messages]$ cd
-  [user@sahara ~]$ pwd
-  /home
 
 
 # ls
