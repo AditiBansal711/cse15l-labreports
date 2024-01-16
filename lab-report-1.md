@@ -1,18 +1,16 @@
 **Lab Report - 1**
 
-#cd
- cd - 'change directory'
+# cd
+cd - 'change directory'
  
 1. Using cd with a folder as an argument
     
 When cd is used with a folder as an argument, the working directory is changed to the specified folder.
 Working directory is /home/lecture1 and is being changed into /home/lecture1/messages/
 
-  ```
-[user@sahara ~/lecture1]$ cd messages
+  ```[user@sahara ~/lecture1]$ cd messages
 [user@sahara ~/lecture1/messages]$ pwd
-/home/lecture1/messages
-```
+/home/lecture1/messages```
 This is intended behaviour and is the most common use case of cd, or “change directory”.
 
 When cd is used with a file as an argument, in this case, en-us.txt, an error is displayed as follows.
@@ -30,7 +28,7 @@ Working directory is /home/lecture1/messages/ and is being changed into /home/
   /home
 
 
-ls
+# ls
 When ls is used with a folder as an argument, the contents of the specified folder are displayed.
 Working directory is /home/
 
@@ -54,17 +52,21 @@ Working directory is /home/lecture1/
   Hello.class  Hello.java  messages  README
 The default argument that ls takes when no other argument is explicitly specified is ./ or the present directory.
 
-cat
+# cat
 When cat is used with a folder as an argument, an error is displayed as follows.
 Working directory is /home/lecture1/
 
+```
   [user@sahara ~/lecture1]$ cat messages/
   cat: messages/: Is a directory
+```
 This message is displayed as cat is to be used with files and it doesn’t know how directories are to be handled. To concatenate and display the contents of all the files within the messages directory, cat messages/* can be used instead.
 
 When cat is used with a file as an argument, the contents of the file are displayed.
 Working directory is /home/lecture1/
 
+
+```
   [user@sahara ~/lecture1]$ cat Hello.java
   import java.io.IOException;
   import java.nio.charset.StandardCharsets;
@@ -80,17 +82,19 @@ Working directory is /home/lecture1/
 cat or “concatenate” takes one or more file-paths as arguments, which are all concatenated, or joined end to end and displayed in the order they were specified.
 
 When cat is used with 2 files as arguments, the contents of the files are displayed in the order that they were specified. Working directory is /home/lecture1
-
+```
   [user@sahara ~/lecture1]$ cat ./messages/en-us.txt ./messages/es-mx.txt ./messages/zh-cn.txt 
   Hello World!¡Hola Mundo!
   你好世界
+  ```
 It is important to note that cat does not insert newline characters at the end of a file. The contents of the files are concatenated end to end as they occur in the file itself. In this particular example, the newline character has been removed from en-us.txt which results in the contents of es-mx.txt being printed immediately after i.e. starting on the same line without any whitespace immediately after the last character of en-us.txt.
 
 When cat is used with no arguments, it initially seems like it does nothing. However, the command is in fact waiting for the user input which it then prints in the next line. This can be exited using Ctrl+C.
 Working directory is /home/lecture1/
-
+```
   [user@sahara ~/lecture1]$ cat
   Input
   Input
   ^C
+  ```
 Since there is no file specified to be concatenated, cat, by default, displays the user input. The key combination Ctrl+C acts as an interrupt and breaks out of this loop.
