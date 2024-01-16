@@ -121,9 +121,11 @@ Working directory: /home/lecture1/
     }
   }
 ```
- The command cat takes one or more file-paths as arguments, which are all concatenated, or joined end to end and displayed in the order they were specified.
 
-When cat is used with 2 files as arguments, the contents of the files are displayed in the order that they were specified.
+ When 'cat' is used, it displays the content of the specified file, it is useful to view the contents of a file without opening it.
+ 
+The command cat takes one or more file-paths as arguments, which are all concatenated, or joined end to end and displayed in the order they were specified.
+example:
 
 Working directory: /home/lecture1
 ```
