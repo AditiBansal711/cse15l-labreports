@@ -29,6 +29,7 @@ bash: cd: en-us.txt: Not a directory
 ```
 When 'cd' is used with a file as an argument results in an error as
 'cd' is designed to change directories,
+
 and specifying a file as an argument is not valid.
 
 ### 3. Using 'cd' without an arguement
@@ -72,11 +73,14 @@ lecture1/Hello.java
 
 When ls is used with a file as an argument, the path of the file is displayed,
 as input in the argument(i.e. path is not resolved).
-This behavior is exhibited as ls cannot “list” the contents of a file. Since the file contains no files within itself, the file path, as given in the argument is displayed.
+
+This behavior is exhibited as ls cannot “list” the contents of a file. 
+Since the file contains no files within itself, the file path, as given in the argument is displayed.
 
 ### 3. Using 'ls' without an arguement
 
 When ls is used without any arguments, the contents of the working directory are displayed.
+
 Working directory: /home/lecture1/
 ```
 [user@sahara ~/lecture1]$ ls
@@ -117,18 +121,19 @@ Working directory: /home/lecture1/
     }
   }
 ```
-cat or “concatenate” takes one or more file-paths as arguments, which are all concatenated, or joined end to end and displayed in the order they were specified.
+ The command cat takes one or more file-paths as arguments, which are all concatenated, or joined end to end and displayed in the order they were specified.
 
 When cat is used with 2 files as arguments, the contents of the files are displayed in the order that they were specified.
 
 Working directory: /home/lecture1
 ```
 [user@sahara ~/lecture1]$ cat ./messages/en-us.txt ./messages/es-mx.txt ./messages/zh-cn.txt 
-Hello World!¡Hola Mundo!
+Hello World!
+¡Hola Mundo!
 你好世界
 ```
 
-It is important to note that cat does not insert newline characters at the end of a file. The contents of the files are concatenated end to end as they occur in the file itself. In this particular example, the newline character has been removed from en-us.txt which results in the contents of es-mx.txt being printed immediately after i.e. starting on the same line without any whitespace immediately after the last character of en-us.txt.
+
 
 ### 3. Using 'cat' with no arguments
 
@@ -140,10 +145,10 @@ Working directory is /home/lecture1/
   ^C
   ```
 
-When cat is used with no arguments, it initially seems like it does nothing.
-However, the command is in fact waiting for the user input which it then prints in the next line. 
-This can be exited using Ctrl+C.
-Since there is no file specified to be concatenated, cat, by default, displays the user input. 
+When cat is used with no arguments,it is not valid or seems to do nothing.
+
 The key combination Ctrl+C acts as an interrupt and breaks out of this loop.
+
+
 
 
