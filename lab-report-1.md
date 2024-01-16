@@ -8,9 +8,11 @@
 When cd is used with a folder as an argument, the working directory is changed to the specified folder.
 Working directory is /home/lecture1 and is being changed into /home/lecture1/messages/
 
-  `[user@sahara ~/lecture1]$ cd messages
-  [user@sahara ~/lecture1/messages]$ pwd
-  /home/lecture1/messages`
+  ```
+[user@sahara ~/lecture1]$ cd messages
+[user@sahara ~/lecture1/messages]$ pwd
+/home/lecture1/messages
+```
 This is intended behaviour and is the most common use case of cd, or “change directory”.
 
 When cd is used with a file as an argument, in this case, en-us.txt, an error is displayed as follows.
