@@ -1,13 +1,16 @@
 # **Lab Report - 1**
 
+Testing cd, ls and  cat commands.
+
 
 # cd
 cd - 'change directory'
  
-1. Using cd with a folder as an argument
+## 1. Using 'cd' with a folder as an argument
     
 
-Working directory is /home/lecture1 
+Working directory: /home/lecture1
+
 Directory After Command Execution: /home/lecture1/messages/
 ```
 [user@sahara ~/lecture1]$ cd messages
@@ -17,7 +20,7 @@ Directory After Command Execution: /home/lecture1/messages/
 When cd is used with a folder as an argument, the working directory is 
 changed to the specified folder.
 
-2. Using cd with a file as an argument
+## 2. Using cd with a file as an argument
 
 Working directory is /home/lecture1/messages/
 ```
@@ -28,9 +31,10 @@ When 'cd' is used with a file as an argument results in an error as
 'cd' is designed to change directories,
 and specifying a file as an argument is not valid.
 
-3. Using 'cd' without an arguement
+## 3. Using 'cd' without an arguement
 
-Working directory: /home/lecture1/messages/ 
+Working directory: /home/lecture1/messages/
+
 Directory After Command Execution: /home/
 ```
 [user@sahara ~/lecture1/messages]$ cd
@@ -41,42 +45,63 @@ When cd is used without any arguments, the working directory is changed to /home
 
 
 # ls
-When ls is used with a folder as an argument, the contents of the specified folder are displayed.
-Working directory is /home/
 
-  [user@sahara ~]$ ls lecture1/
+ls- 'list'
+
+## 1. Using 'ls' with a folder as an argument
+
+Working directory: /home/
+```
+[user@sahara ~]$ ls lecture1
   Hello.class  Hello.java  messages  README
-ls stands for “list”. So, it lists all the files and directories within the specified folder.
+```
 
-When ls is used with a file as an argument, the path of the file is displayed, as input in the argument(i.e. path is not resolved).
-Working directory is /home/
+When ls is used with a folder as an argument, the contents of the specified 
+folder are displayed.
 
-  [user@sahara ~]$ ls lecture1/Hello.java
-  lecture1/Hello.java
-  [user@sahara ~]$ ls ./lecture1/Hello.java
-  ./lecture1/Hello.java
+
+## 2. Using 'ls' with a file as an arguement
+
+Working directory: /home/
+```
+[user@sahara ~]$ ls lecture1/Hello.java
+lecture1/Hello.java
+[user@sahara ~]$ ls ./lecture1/Hello.java
+./lecture1/Hello.java
+```
+
+When ls is used with a file as an argument, the path of the file is displayed,
+as input in the argument(i.e. path is not resolved).
 This behavior is exhibited as ls cannot “list” the contents of a file. Since the file contains no files within itself, the file path, as given in the argument is displayed.
 
-When ls is used without any arguments, the contents of the working directory are displayed.
-Working directory is /home/lecture1/
+## 3. Using 'ls' without an arguement
 
-  [user@sahara ~/lecture1]$ ls
+When ls is used without any arguments, the contents of the working directory are displayed.
+Working directory: /home/lecture1/
+```
+[user@sahara ~/lecture1]$ ls
   Hello.class  Hello.java  messages  README
+```
 The default argument that ls takes when no other argument is explicitly specified is ./ or the present directory.
 
 # cat
-When cat is used with a folder as an argument, an error is displayed as follows.
-Working directory is /home/lecture1/
+cat - 'concatenate'
+
+## 1. Using 'cat' with a folder as an argument
+
+Working directory: /home/lecture1/
 
 ```
   [user@sahara ~/lecture1]$ cat messages/
   cat: messages/: Is a directory
 ```
-This message is displayed as cat is to be used with files and it doesn’t know how directories are to be handled. To concatenate and display the contents of all the files within the messages directory, cat messages/* can be used instead.
+When cat is used with a folder as an argument, an error is displayed as follows. 
+Error occurs as 'cat' expects a file as an arguement, it cannot handle directories.
 
-When cat is used with a file as an argument, the contents of the file are displayed.
-Working directory is /home/lecture1/
 
+## 2. Using 'cat' with a file as an arguement
+
+Working directory: /home/lecture1/
 
 ```
   [user@sahara ~/lecture1]$ cat Hello.java
@@ -91,17 +116,22 @@ Working directory is /home/lecture1/
       System.out.println(content);
     }
   }
+```
 cat or “concatenate” takes one or more file-paths as arguments, which are all concatenated, or joined end to end and displayed in the order they were specified.
 
-When cat is used with 2 files as arguments, the contents of the files are displayed in the order that they were specified. Working directory is /home/lecture1
+When cat is used with 2 files as arguments, the contents of the files are displayed in the order that they were specified.
+
+Working directory: /home/lecture1
 ```
-  [user@sahara ~/lecture1]$ cat ./messages/en-us.txt ./messages/es-mx.txt ./messages/zh-cn.txt 
-  Hello World!¡Hola Mundo!
-  你好世界
-  ```
+[user@sahara ~/lecture1]$ cat ./messages/en-us.txt ./messages/es-mx.txt ./messages/zh-cn.txt 
+Hello World!¡Hola Mundo!
+你好世界
+```
+
 It is important to note that cat does not insert newline characters at the end of a file. The contents of the files are concatenated end to end as they occur in the file itself. In this particular example, the newline character has been removed from en-us.txt which results in the contents of es-mx.txt being printed immediately after i.e. starting on the same line without any whitespace immediately after the last character of en-us.txt.
 
-When cat is used with no arguments, it initially seems like it does nothing. However, the command is in fact waiting for the user input which it then prints in the next line. This can be exited using Ctrl+C.
+## 3. Using 'cat' with no arguments
+
 Working directory is /home/lecture1/
 ```
   [user@sahara ~/lecture1]$ cat
@@ -109,4 +139,11 @@ Working directory is /home/lecture1/
   Input
   ^C
   ```
-Since there is no file specified to be concatenated, cat, by default, displays the user input. The key combination Ctrl+C acts as an interrupt and breaks out of this loop.
+
+When cat is used with no arguments, it initially seems like it does nothing.
+However, the command is in fact waiting for the user input which it then prints in the next line. 
+This can be exited using Ctrl+C.
+Since there is no file specified to be concatenated, cat, by default, displays the user input. 
+The key combination Ctrl+C acts as an interrupt and breaks out of this loop.
+
+
