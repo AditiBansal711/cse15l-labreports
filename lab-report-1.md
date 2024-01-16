@@ -6,7 +6,7 @@ Testing cd, ls and  cat commands.
 # cd
 cd - 'change directory'
  
-## 1. Using 'cd' with a folder as an argument
+### 1. Using 'cd' with a folder as an argument
     
 
 Working directory: /home/lecture1
@@ -20,7 +20,7 @@ Directory After Command Execution: /home/lecture1/messages/
 When cd is used with a folder as an argument, the working directory is 
 changed to the specified folder.
 
-## 2. Using cd with a file as an argument
+### 2. Using cd with a file as an argument
 
 Working directory is /home/lecture1/messages/
 ```
@@ -31,7 +31,7 @@ When 'cd' is used with a file as an argument results in an error as
 'cd' is designed to change directories,
 and specifying a file as an argument is not valid.
 
-## 3. Using 'cd' without an arguement
+### 3. Using 'cd' without an arguement
 
 Working directory: /home/lecture1/messages/
 
@@ -48,7 +48,7 @@ When cd is used without any arguments, the working directory is changed to /home
 
 ls- 'list'
 
-## 1. Using 'ls' with a folder as an argument
+### 1. Using 'ls' with a folder as an argument
 
 Working directory: /home/
 ```
@@ -60,7 +60,7 @@ When ls is used with a folder as an argument, the contents of the specified
 folder are displayed.
 
 
-## 2. Using 'ls' with a file as an arguement
+### 2. Using 'ls' with a file as an arguement
 
 Working directory: /home/
 ```
@@ -74,7 +74,7 @@ When ls is used with a file as an argument, the path of the file is displayed,
 as input in the argument(i.e. path is not resolved).
 This behavior is exhibited as ls cannot “list” the contents of a file. Since the file contains no files within itself, the file path, as given in the argument is displayed.
 
-## 3. Using 'ls' without an arguement
+### 3. Using 'ls' without an arguement
 
 When ls is used without any arguments, the contents of the working directory are displayed.
 Working directory: /home/lecture1/
@@ -87,7 +87,7 @@ The default argument that ls takes when no other argument is explicitly specifie
 # cat
 cat - 'concatenate'
 
-## 1. Using 'cat' with a folder as an argument
+### 1. Using 'cat' with a folder as an argument
 
 Working directory: /home/lecture1/
 
@@ -99,7 +99,7 @@ When cat is used with a folder as an argument, an error is displayed as follows.
 Error occurs as 'cat' expects a file as an arguement, it cannot handle directories.
 
 
-## 2. Using 'cat' with a file as an arguement
+### 2. Using 'cat' with a file as an arguement
 
 Working directory: /home/lecture1/
 
@@ -130,7 +130,7 @@ Hello World!¡Hola Mundo!
 
 It is important to note that cat does not insert newline characters at the end of a file. The contents of the files are concatenated end to end as they occur in the file itself. In this particular example, the newline character has been removed from en-us.txt which results in the contents of es-mx.txt being printed immediately after i.e. starting on the same line without any whitespace immediately after the last character of en-us.txt.
 
-## 3. Using 'cat' with no arguments
+### 3. Using 'cat' with no arguments
 
 Working directory is /home/lecture1/
 ```
