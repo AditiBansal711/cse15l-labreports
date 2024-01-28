@@ -3,15 +3,16 @@
 Testing cd, ls and  cat commands.
 
 
+
 # cd
 cd - 'change directory'
  
 ### 1. Using 'cd' with a folder as an argument
     
 
-Working directory: /home/lecture1
+Working directory: ```/home/lecture1```
 
-Directory After Command Execution: /home/lecture1/messages/
+Directory After Command Execution: ```/home/lecture1/messages/```
 ```
 [user@sahara ~/lecture1]$ cd messages
 [user@sahara ~/lecture1/messages]$ pwd
@@ -22,7 +23,7 @@ changed to the specified folder.
 
 ### 2. Using 'cd' with a file as an argument
 
-Working directory is /home/lecture1/messages/
+Working directory: ```/home/lecture1/messages/```
 ```
 [user@sahara ~/lecture1/messages]$ cd en-us.txt 
 bash: cd: en-us.txt: Not a directory
@@ -34,9 +35,9 @@ and specifying a file as an argument is not valid.
 
 ### 3. Using 'cd' without an arguement
 
-Working directory: /home/lecture1/messages/
+Working directory: ```/home/lecture1/messages/```
 
-Directory After Command Execution: /home/
+Directory After Command Execution: ```/home/```
 ```
 [user@sahara ~/lecture1/messages]$ cd
 [user@sahara ~]$ pwd
@@ -45,13 +46,14 @@ Directory After Command Execution: /home/
 When cd is used without any arguments, the working directory is changed to /home.
 
 
+
 # ls
 
 ls- 'list'
 
 ### 1. Using 'ls' with a folder as an argument
 
-Working directory: /home/
+Working directory: ```/home/```
 ```
 [user@sahara ~]$ ls lecture1
   Hello.class  Hello.java  messages  README
@@ -63,7 +65,7 @@ folder are displayed.
 
 ### 2. Using 'ls' with a file as an arguement
 
-Working directory: /home/
+Working directory: ```/home/```
 ```
 [user@sahara ~]$ ls lecture1/Hello.java
 lecture1/Hello.java
@@ -81,19 +83,21 @@ Since the file contains no files within itself, the file path, as given in the a
 
 When ls is used without any arguments, the contents of the working directory are displayed.
 
-Working directory: /home/lecture1/
+Working directory: ```/home/lecture1/```
 ```
 [user@sahara ~/lecture1]$ ls
   Hello.class  Hello.java  messages  README
 ```
 The default argument that ls takes when no other argument is explicitly specified is ./ or the present directory.
 
+
+
 # cat
 cat - 'concatenate'
 
 ### 1. Using 'cat' with a folder as an argument
 
-Working directory: /home/lecture1/
+Working directory: ```/home/lecture1/```
 
 ```
   [user@sahara ~/lecture1]$ cat messages/
@@ -105,7 +109,7 @@ Error occurs as 'cat' expects a file as an arguement, it cannot handle directori
 
 ### 2. Using 'cat' with a file as an arguement
 
-Working directory: /home/lecture1/
+Working directory: ```/home/lecture1/```
 
 ```
   [user@sahara ~/lecture1]$ cat Hello.java
@@ -127,7 +131,7 @@ Working directory: /home/lecture1/
 The command cat takes one or more file-paths as arguments, which are all concatenated, or joined end to end and displayed in the order they were specified.
 example:
 
-Working directory: /home/lecture1
+Working directory: ```/home/lecture1```
 ```
 [user@sahara ~/lecture1]$ cat ./messages/en-us.txt ./messages/es-mx.txt ./messages/zh-cn.txt 
 Hello World!
@@ -135,11 +139,9 @@ Hello World!
 你好世界
 ```
 
-
-
 ### 3. Using 'cat' with no arguments
 
-Working directory is /home/lecture1/
+Working directory is ```/home/lecture1/```
 ```
   [user@sahara ~/lecture1]$ cat
   Input
