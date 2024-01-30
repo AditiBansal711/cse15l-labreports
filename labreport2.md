@@ -1,5 +1,7 @@
 # LAB REPORT 2
 ## TASK 1: Building a ChatServer
+### CODE:
+``` ```
 
 Q1)What methods in your code are called?
 My code uses 3 methods:
