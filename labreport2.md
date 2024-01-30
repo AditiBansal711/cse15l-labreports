@@ -91,7 +91,6 @@ allMessages: This variable is in the ChatHistory method and is a string that sta
 
 # What I learned This week
 
-*During Week 2, I learnt about the URLHandler interface and about the different parts of a URL. I also learnt about what a port is and what ports people usually use to build websites(80 or 443). Addtionally, I learnt how to build my own Server using simple Java Code. I also learnt a few more commands such as curl and how I could access URL’s using the curl command. Building the Search Engine was really interesting!  
-*During Week 3, I learnt about using SSH keys for easy access into my course-specific account. I also learnt 2 new comments-scp to securely copy and mkdir to make a directory.
-
+During Week 2, I learnt about the URLHandler interface and about the different parts of a URL. I also learnt about what a port is and what ports people usually use to build websites(80 or 443). Addtionally, I learnt how to build my own Server using simple Java Code. I also learnt a few more commands such as curl and how I could access URL’s using the curl command. Building the Search Engine was really interesting!  
+During Week 3, I learnt about using SSH keys for easy access into my course-specific account. I also learnt 2 new comments-scp to securely copy and mkdir to make a directory.
 
