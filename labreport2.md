@@ -84,10 +84,18 @@ allMessages: This variable is in the ChatHistory method and is a string that sta
 
 # SSH KEYS
 ## Private key with ls
+<img width="254" alt="image" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/6bbc0f1a-573c-47b7-9bd8-d66b7d268b0c">
+
+
 
 ## Public key with ls 
+<img width="645" alt="image" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/7ad7ccd8-c026-4820-8147-e2127c8d591d">
+
+
 
 ## ieng6 without using password
+<img width="692" alt="image" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/f2df6fac-4080-42ed-9e2f-58c9d8437d00">
+
 
 # What I learned This week
 
