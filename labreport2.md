@@ -59,9 +59,9 @@ class ChatServer{
 
 ## What methods in your code are called?
 
-```handleRequest```:This method is in the Handler class and is called when the server receives a request to the /add-message path.
-```ChatHistory```:This method is in the Handler class and is called within handleRequest to construct and return the full chat history after a new message is added.
-```main```:This method is in the ChatServer class andis the entry point of the ChatServer program. It is called when the server application is started.
+```handleRequest```:This method is in the Handler class and is called when the server receives a request to the /add-message path.  
+```ChatHistory```:This method is in the Handler class and is called within handleRequest to construct and return the full chat history after a new message is added.  
+```main```:This method is in the ChatServer class andis the entry point of the ChatServer program. It is called when the server application is started.  
 
 
 ## Q2)What are the relevant arguments to those methods, and the values of any relevant fields of the class?
@@ -73,12 +73,12 @@ For main(String [] args): This method takes in the arguments from the command-li
 ## Q3)How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
 In the Handler class, the arr ArrayList field is initially empty but upon receving the request, the handleRequest method parses the query and constructs the message "jpolitz: Hello" and adds it to the ArrayList arr. When it comes to local variables, the following variables get updated:
 
-```query```:This variable will hold the full query string s=Hello&user=jpolitz extracted from the url.
-```param```:This array will be populated with the split results of the query string ["s=Hello", "user=jpolitz"].
-```messageParam```:This variable will hold the message part of the query, s=Hello.
-```userParam```: This variable will hold the user part of the query, user=jpolitz.
-```message```:After extracting the substring from messageParam, this will hold Hello.
-```user```:After extracting the substring from userParam, this will hold jpolitz.
+```query```:This variable will hold the full query string s=Hello&user=jpolitz extracted from the url.  
+```param```:This array will be populated with the split results of the query string ["s=Hello", "user=jpolitz"].  
+```messageParam```:This variable will hold the message part of the query, s=Hello.  
+```userParam```: This variable will hold the user part of the query, user=jpolitz.  
+```message```:After extracting the substring from messageParam, this will hold Hello.  
+```user```:After extracting the substring from userParam, this will hold jpolitz.  
 ```allMessages```: This variable is in the ChatHistory method and is a string that starts as an empty string and accumulates all chat messages from the ArrayList arr. After the request, it will hold jpolitz: Hello\n. In the ChatServer class, the main method accepts the port number as args[0].
 ### SECOND OUTPUT 
 <img width="1512" alt="Screenshot 2024-01-30 at 3 11 43 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/fb4ff9d9-fb24-4ca1-922e-528aea14fc98">
