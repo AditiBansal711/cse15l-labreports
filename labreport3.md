@@ -1,6 +1,6 @@
 # Lab Report 3 - Bugs and Commands 
 
-## PART 1
+## PART1 - Bugs
 
 ### 1. Failure inducing program
 ```
@@ -52,4 +52,44 @@ public String handleRequest(URI url) {
 ```
 ### 5.Description
 The bug occurs because the handleRequest() method doesn't handle null URIs properly, leading to a NullPointerException when trying to access properties of the URI object. By adding a null check for the URI parameter, we ensure that the method fails fast and provides a more meaningful error message instead of throwing a NullPointerException.
+
+# Part 2 - Researching Commands
+
+## Command: grep
+
+### Option: -i (ignore case)
+
+Source: Linux grep Command Usage with Examples
+
+### 1.Example on files:
+```
+grep -i "hello" file.txt
+```
+This command searches for the string "hello" in the file.txt file, ignoring case sensitivity.
+
+### Output:
+```
+Hello world
+hello there
+```
+Explanation: The -i option ensures that the search is case-insensitive, so both "Hello" and "hello" are matched.
+
+### 2.Example on directories:
+```
+grep -ri "error" ./directory
+```
+This command searches for the string "error" recursively in all files within the directory directory, ignoring case sensitivity.
+
+### Output:
+```
+./directory/file1.txt: Error encountered
+./directory/subdirectory/file2.txt: ERROR: Something went wrong
+```
+Explanation: The -r option enables recursive search, while -i makes the search case-insensitive, allowing you to find instances of "error", "Error", "ERROR", etc., in the specified directory and its subdirectories.
+
+
+
+
+
+
 
