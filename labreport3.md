@@ -40,3 +40,16 @@ This test checks if the handleRequest() method of ChatHandler returns an empty s
 ### 3.Symptom
 
 Running the JUnit tests will result in the testHandleRequest_NullURI test failing with a NullPointerException, while the testHandleRequest_ValidURI test will pass successfully.
+
+### 4.Bug Fix 
+```
+public String handleRequest(URI url) {
+    if (url == null) {
+        throw new IllegalArgumentException("URI cannot be null");
+    }
+    // Existing code remains unchanged
+}
+```
+### 5.Description
+The bug occurs because the handleRequest() method doesn't handle null URIs properly, leading to a NullPointerException when trying to access properties of the URI object. By adding a null check for the URI parameter, we ensure that the method fails fast and provides a more meaningful error message instead of throwing a NullPointerException.
+
