@@ -16,3 +16,5 @@ public class ChatHandlerTest {
     }
 }
 ```
+This test checks if the handleRequest() method of ChatHandler throws a NullPointerException when passed a null URI.
+
