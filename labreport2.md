@@ -85,11 +85,14 @@ In the Handler class, the arr ArrayList field is initially empty but upon recevi
 
 # SSH KEYS
 ## Private key with ls
-<img width="254" alt="image" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/6bbc0f1a-573c-47b7-9bd8-d66b7d268b0c">
+
+<img width="711" alt="Screenshot 2024-02-12 at 3 04 40 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/28aefa16-a023-451b-8573-0bb712762e6c">
 
 
 
 ## Public key with ls 
+
+<img width="254" alt="image" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/6bbc0f1a-573c-47b7-9bd8-d66b7d268b0c">
 <img width="645" alt="image" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/7ad7ccd8-c026-4820-8147-e2127c8d591d">
 
 
