@@ -13,9 +13,9 @@ class Handler implements URLHandler{
 
         if(url.getPath().equals("/add-message")){
             String query=url.getQuery();
-            String [] param=query.split("&");
-            String messageParam=param[0];
-            String userParam=param[1];
+            String[] param = query.split("&");
+            String messageParam = param[0];
+            String userParam = param[1];
 
         if(messageParam.startsWith("s=") && userParam.startsWith("user=")){
         
@@ -91,7 +91,7 @@ In the Handler class, the arr ArrayList field is initially empty but upon recevi
 
 
 ## Q2)What are the relevant arguments to those methods, and the values of any relevant fields of the class?
-For handleRequest(URI url):The URI url part takes in a URL as the argument. The URL in this case would be https://0-0-0-0-4001-ptlc58ci4hbh3djvp2vh064cj4.us.edusercontent.com/add-message?s=Hello&user=jpolitz.
+For handleRequest(URI url):The URI url part takes in a URL as the argument. The URL in this case would be https://0-0-0-0-4001-ptlc58ci4hbh3djvp2vh064cj4.us.edusercontent.com/add-message?s=How%20are%20you&user=aditib.
 For ChatHistory(): There are no arguments for this method. It iterates over the arr ArrayList filed to build the chat history.
 For main(String [] args): This method takes in the arguments from the command-line where args[0] is expected to be the port number on which the Server should listen.
 
