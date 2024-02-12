@@ -97,7 +97,7 @@ For main(String [] args): This method takes in the arguments from the command-li
 
 
 ## Q3)How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
-In the Handler class, the arr ArrayList field is initially empty but upon receving the request, the handleRequest method parses the query and constructs the message "aditib: How are you" and adds it to the ArrayList arr. When it comes to local variables, the following variables get updated:
+In the Handler class, the arr ArrayList field is not empty  upon receving the request, the handleRequest method parses the query and constructs the message "aditib: How are you" and adds it to the ArrayList arr at the first index, whereas the older message is stored at the first index. When it comes to local variables, the following variables get updated:
 
 ```query```:This variable will hold the full query string s=How%20are%20you&user=aditib extracted from the url.  
 ```param```:This array will be populated with the split results of the query string ["s=How%20are%20you", "user=aditib"].  
