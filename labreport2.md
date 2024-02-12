@@ -65,9 +65,9 @@ class ChatServer{
 
 
 ## Q2)What are the relevant arguments to those methods, and the values of any relevant fields of the class?
-For handleRequest(URI url):The URI url part takes in a URL as the argument. The URL in this case would be https://0-0-0-0-4001-ptlc58ci4hbh3djvp2vh064cj4.us.edusercontent.com/add-message?s=Hello&user=jpolitz.
-For ChatHistory(): There are no arguments for this method. It iterates over the arr ArrayList filed to build the chat history.
-For main(String [] args): This method takes in the arguments from the command-line where args[0] is expected to be the port number on which the Server should listen.
+For ```handleRequest(URI url)```:The URI url part takes in a URL as the argument. The URL in this case would be https://0-0-0-0-4001-ptlc58ci4hbh3djvp2vh064cj4.us.edusercontent.com/add-message?s=Hello&user=jpolitz.
+For ```ChatHistory()```: There are no arguments for this method. It iterates over the arr ArrayList filed to build the chat history.
+For ```main(String [] args)```: This method takes in the arguments from the command-line where args[0] is expected to be the port number on which the Server should listen.
 
 
 ## Q3)How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
@@ -91,21 +91,22 @@ In the Handler class, the arr ArrayList field is initially empty but upon recevi
 
 
 ## Q2)What are the relevant arguments to those methods, and the values of any relevant fields of the class?
-For handleRequest(URI url):The URI url part takes in a URL as the argument. The URL in this case would be https://0-0-0-0-4001-ptlc58ci4hbh3djvp2vh064cj4.us.edusercontent.com/add-message?s=How%20are%20you&user=aditib.
-For ChatHistory(): There are no arguments for this method. It iterates over the arr ArrayList filed to build the chat history.
+For ```handleRequest(URI url)```:The URI url part takes in a URL as the argument. The URL in this case would be https://0-0-0-0-4001-ptlc58ci4hbh3djvp2vh064cj4.us.edusercontent.com/add-message?s=How%20are%20you&user=aditib.
+For ```ChatHistory()```: It iterates over the arr ArrayList filed to build the chat history. It has "jpolitz: Hello" saved in the array and then the next added message too, it returns both the strings stored with a line break in between.
 For main(String [] args): This method takes in the arguments from the command-line where args[0] is expected to be the port number on which the Server should listen.
 
 
 ## Q3)How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
-In the Handler class, the arr ArrayList field is initially empty but upon receving the request, the handleRequest method parses the query and constructs the message "jpolitz: Hello" and adds it to the ArrayList arr. When it comes to local variables, the following variables get updated:
+In the Handler class, the arr ArrayList field is initially empty but upon receving the request, the handleRequest method parses the query and constructs the message "aditib: How are you" and adds it to the ArrayList arr. When it comes to local variables, the following variables get updated:
 
-```query```:This variable will hold the full query string s=Hello&user=jpolitz extracted from the url.  
-```param```:This array will be populated with the split results of the query string ["s=Hello", "user=jpolitz"].  
-```messageParam```:This variable will hold the message part of the query, s=Hello.  
-```userParam```: This variable will hold the user part of the query, user=jpolitz.  
-```message```:After extracting the substring from messageParam, this will hold Hello.  
-```user```:After extracting the substring from userParam, this will hold jpolitz.  
-```allMessages```: This variable is in the ChatHistory method and is a string that starts as an empty string and accumulates all chat messages from the ArrayList arr. After the request, it will hold jpolitz: Hello\n. In the ChatServer class, the main method accepts the port number as args[0].
+```query```:This variable will hold the full query string s=How%20are%20you&user=aditib extracted from the url.  
+```param```:This array will be populated with the split results of the query string ["s=How%20are%20you", "user=aditib"].  
+```messageParam```:This variable will hold the message part of the query, s=How%20are%20you.  
+```userParam```: This variable will hold the user part of the query, user=aditib.  
+```message```:After extracting the substring from messageParam, this will hold "How are you" .  
+```user```:After extracting the substring from userParam, this will hold "aditib".  
+```allMessages```: This variable is in the ChatHistory method and is a string that starts as an empty string and accumulates all chat messages from the ArrayList arr. After the request, it will hold jpolitz: Hello\n and aditib: How%20are%20you.
+In the ChatServer class, the main method accepts the port number as args[0].
 
 # SSH KEYS
 ## Private key with ls
