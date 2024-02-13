@@ -117,7 +117,7 @@ In the ChatServer class, the main method accepts the port number as args[0].
 
 ## Public key with ls 
 
-<img width="254" alt="image" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/6bbc0f1a-573c-47b7-9bd8-d66b7d268b0c">
+
 <img width="645" alt="image" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/7ad7ccd8-c026-4820-8147-e2127c8d591d">
 
 
