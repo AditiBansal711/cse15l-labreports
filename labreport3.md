@@ -96,6 +96,17 @@ grep -n "pattern" file.txt
 ```
 This command displays line numbers along with the lines containing the specified pattern in file.txt. It helps in quickly locating the occurrences of the pattern within the file.
 
+Example 1:
+
+<img width="702" alt="Screenshot 2024-02-13 at 6 27 02 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/cd99dfa9-ebb0-4062-aa9c-0b9bf521b5e0">
+
+
+Example 2: 
+
+<img width="714" alt="Screenshot 2024-02-13 at 6 36 02 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/599634b7-5c0c-49fb-a700-5e8fe9e34171">
+
+
+
 ### Option 4: -v (Invert match)
 ```
 grep -v "pattern" file.txt
