@@ -39,7 +39,7 @@ public class ArrayExamplesTest {
 
 ### 3.Symptom
 
-Running the JUnit tests will result in the testHandleRequest_NullURI test failing with a NullPointerException, while the testHandleRequest_ValidURI test will pass successfully.
+<img width="1101" alt="Screenshot 2024-02-13 at 7 31 09 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/2a049585-eb42-4d90-b16d-5000cfca2dda">
 
 ### 4.Bug Fix 
 Code before bug fix: 
