@@ -81,7 +81,7 @@ grep -r "pattern" ./technical
 ```
 This command recursively searches for the specified pattern in all files and directories within the ./technical directory. It's useful for finding occurrences of a pattern across multiple files and directories.
 
-Example 1:
+Example 1: 
 
 <img width="1101" alt="Screenshot 2024-02-13 at 7 04 28 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/602a7614-98de-41de-a320-cc34c61bf3de">
 
