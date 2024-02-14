@@ -77,7 +77,11 @@ This command recursively searches for the specified pattern in all files and dir
 
 Example 1:
 
+
+
+
 Example 2: 
+
 
 
 ### Option 2: -i (Case-insensitive search)
@@ -88,11 +92,14 @@ This command performs a case-insensitive search for the specified pattern in the
 
 Example 1: 
 
-<img width="711" alt="-i caseinsensitiveex1" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/d189145e-0d38-40a4-a7b2-374a6c1a932c">
+<img width="906" alt="Screenshot 2024-02-13 at 6 56 46 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/6bf80d61-caa2-404f-9417-b6e03cb1e62e">
 
 Example 2:
 
-<img width="800" alt="Screenshot 2024-02-13 at 6 26 11 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/eae7188c-4b7b-426a-8dcd-d96358fe81ad">
+<img width="906" alt="Screenshot 2024-02-13 at 6 53 20 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/bdeb620b-cf70-4913-9c80-187f2f52052b">
+
+
+
 
 
 ### Option 3: -n (Display line numbers)
