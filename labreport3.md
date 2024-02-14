@@ -98,7 +98,7 @@ This command displays line numbers along with the lines containing the specified
 
 Example 1:
 
-<img width="702" alt="Screenshot 2024-02-13 at 6 27 02 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/cd99dfa9-ebb0-4062-aa9c-0b9bf521b5e0">
+<img width="714" alt="Screenshot 2024-02-13 at 6 35 32 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/d43ec25d-ff5a-4e30-9dad-032dde878439">
 
 
 Example 2: 
