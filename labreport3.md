@@ -112,12 +112,14 @@ This command displays line numbers along with the lines containing the specified
 
 Example 1:
 
-<img width="714" alt="Screenshot 2024-02-13 at 6 35 32 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/d43ec25d-ff5a-4e30-9dad-032dde878439">
+<img width="1101" alt="Screenshot 2024-02-13 at 7 08 16 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/527cfb4f-2a6d-47f0-bac4-73ba2fa49265">
+
 
 
 Example 2: 
 
-<img width="714" alt="Screenshot 2024-02-13 at 6 36 02 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/599634b7-5c0c-49fb-a700-5e8fe9e34171">
+
+<img width="1101" alt="Screenshot 2024-02-13 at 7 09 12 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/ea5453f6-a546-4280-bcbd-1b21550d38da">
 
 
 
