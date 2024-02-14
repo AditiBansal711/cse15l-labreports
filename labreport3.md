@@ -42,6 +42,17 @@ public class ArrayExamplesTest {
 Running the JUnit tests will result in the testHandleRequest_NullURI test failing with a NullPointerException, while the testHandleRequest_ValidURI test will pass successfully.
 
 ### 4.Bug Fix 
+Code before bug fix:
+```
+static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }
+```
+Code after bug fix:
 ```
 static int[] reversed(int[] arr) {
     int[] newArray = new int[arr.length];
