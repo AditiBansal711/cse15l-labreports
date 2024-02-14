@@ -82,9 +82,11 @@ grep -i "pattern" file.txt
 This command performs a case-insensitive search for the specified pattern in the file.txt. It ignores the case of letters, making the search more flexible.
 
 Example 1: 
+
 <img width="711" alt="-i caseinsensitiveex1" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/d189145e-0d38-40a4-a7b2-374a6c1a932c">
 
 Example 2:
+
 <img width="800" alt="Screenshot 2024-02-13 at 6 26 11 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/eae7188c-4b7b-426a-8dcd-d96358fe81ad">
 
 
