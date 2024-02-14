@@ -41,11 +41,18 @@ public class ArrayExamplesTest {
 
 <img width="1101" alt="Screenshot 2024-02-13 at 7 31 09 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/2a049585-eb42-4d90-b16d-5000cfca2dda">
 
+
+<img width="1101" alt="Screenshot 2024-02-13 at 7 24 02 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/2321b50d-5861-4618-a407-f201ee3d2f97">
+
 The symptom of the bug is evident in the JUnit output where two tests (testReversedSuccess and testReversedFailure) have failed. 
 Both failures are due to arrays first differing at element [0], where the expected value is different from the actual value.
 The failed tests indicate that the reversed method in the ArrayExamples class is not properly reversing the input array.
 In both cases, the expected first element of the reversed array is 1 and 4, respectively, but the actual first element is 0.
 This suggests that the method is not correctly reversing the elements of the array, leading to incorrect output.
+
+JUNIT Debugger:
+<img width="1101" alt="Screenshot 2024-02-13 at 7 24 29 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/7bbcd3bc-64bd-4d04-b6c2-65cc587d16f7">
+
 
 ### 4.Bug Fix 
 Code before bug fix: 
