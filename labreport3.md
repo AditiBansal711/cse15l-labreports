@@ -133,11 +133,12 @@ These options provide enhanced functionality to the grep command, allowing for m
 
 Example 1: 
 
-<img width="714" alt="Screenshot 2024-02-13 at 6 40 21 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/65937de4-b49b-41bc-87c9-eb624486f401">
+<img width="1101" alt="Screenshot 2024-02-13 at 7 14 32 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/610990fb-0ca4-4290-8e38-67affb426b05">
+
 
 Example 2:
 
-<img width="714" alt="Screenshot 2024-02-13 at 6 39 51 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/6666868b-3c54-46b5-bf54-896060fac610">
+<img width="1101" alt="Screenshot 2024-02-13 at 7 13 59 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/e8a1a553-f5d0-4baf-a74f-f43138c1d56e">
 
 
 
