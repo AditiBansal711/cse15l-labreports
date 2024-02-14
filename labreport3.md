@@ -69,6 +69,32 @@ The bug was caused by assigning values to the input array arr instead of the new
 
 ## Command: grep
 
+### Option 1: -r (Recursive search)
+```
+grep -r "pattern" ./technical
+```
+This command recursively searches for the specified pattern in all files and directories within the ./technical directory. It's useful for finding occurrences of a pattern across multiple files and directories.
+
+### Option 2: -i (Case-insensitive search)
+```
+grep -i "pattern" file.txt
+```
+This command performs a case-insensitive search for the specified pattern in the file.txt. It ignores the case of letters, making the search more flexible.
+
+### Option 3: -n (Display line numbers)
+```
+grep -n "pattern" file.txt
+```
+This command displays line numbers along with the lines containing the specified pattern in file.txt. It helps in quickly locating the occurrences of the pattern within the file.
+
+### Option 4: -v (Invert match)
+```
+grep -v "pattern" file.txt
+```
+This command prints all lines that do not contain the specified pattern in file.txt. It's useful for filtering out unwanted lines from the output.
+
+These options provide enhanced functionality to the grep command, allowing for more efficient and flexible text searches in files and directories.
+
 
 
 
