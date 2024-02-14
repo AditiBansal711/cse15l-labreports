@@ -75,6 +75,11 @@ grep -r "pattern" ./technical
 ```
 This command recursively searches for the specified pattern in all files and directories within the ./technical directory. It's useful for finding occurrences of a pattern across multiple files and directories.
 
+Example 1:
+
+Example 2: 
+
+
 ### Option 2: -i (Case-insensitive search)
 ```
 grep -i "pattern" file.txt
@@ -115,7 +120,13 @@ This command prints all lines that do not contain the specified pattern in file.
 
 These options provide enhanced functionality to the grep command, allowing for more efficient and flexible text searches in files and directories.
 
+Example 1: 
 
+<img width="714" alt="Screenshot 2024-02-13 at 6 40 21 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/65937de4-b49b-41bc-87c9-eb624486f401">
+
+Example 2:
+
+<img width="714" alt="Screenshot 2024-02-13 at 6 39 51 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/6666868b-3c54-46b5-bf54-896060fac610">
 
 
 
