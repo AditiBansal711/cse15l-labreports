@@ -77,10 +77,12 @@ This command recursively searches for the specified pattern in all files and dir
 
 Example 1:
 
-
-
+<img width="1101" alt="Screenshot 2024-02-13 at 7 04 28 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/602a7614-98de-41de-a320-cc34c61bf3de">
 
 Example 2: 
+
+<img width="1101" alt="Screenshot 2024-02-13 at 7 05 00 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/7aa28eca-6379-4f63-8ea2-f1c8919dde86">
+
 
 
 
