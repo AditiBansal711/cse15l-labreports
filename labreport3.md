@@ -81,11 +81,11 @@ grep -r "pattern" ./technical
 ```
 This command recursively searches for the specified pattern in all files and directories within the ./technical directory. It's useful for finding occurrences of a pattern across multiple files and directories.
 
-Example 1: 
+Example 1: (Command gives location of where "police" is in the entire directory/folder)
 
 <img width="1101" alt="Screenshot 2024-02-13 at 7 04 28 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/602a7614-98de-41de-a320-cc34c61bf3de">
 
-Example 2: 
+Example 2: (Command gives location of where "apples" is in the entire directory/folder-as it does not exist, there is no output)
 
 <img width="1101" alt="Screenshot 2024-02-13 at 7 05 00 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/7aa28eca-6379-4f63-8ea2-f1c8919dde86">
 
@@ -98,11 +98,11 @@ grep -i "pattern" file.txt
 ```
 This command performs a case-insensitive search for the specified pattern in the file.txt. It ignores the case of letters, making the search more flexible.
 
-Example 1: 
+Example 1:(Command will give containing "RESPONSE" without being case sensitive)
 
 <img width="906" alt="Screenshot 2024-02-13 at 6 56 46 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/6bf80d61-caa2-404f-9417-b6e03cb1e62e">
 
-Example 2:
+Example 2:(Command will give containing "few" without being case sensitive)
 
 <img width="906" alt="Screenshot 2024-02-13 at 6 53 20 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/bdeb620b-cf70-4913-9c80-187f2f52052b">
 
@@ -116,13 +116,14 @@ grep -n "pattern" file.txt
 ```
 This command displays line numbers along with the lines containing the specified pattern in file.txt. It helps in quickly locating the occurrences of the pattern within the file.
 
-Example 1:
+Example 1:(Command gives line no. and text where "commanded" is the given file)
+
 
 <img width="1101" alt="Screenshot 2024-02-13 at 7 08 16 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/527cfb4f-2a6d-47f0-bac4-73ba2fa49265">
 
 
 
-Example 2: 
+Example 2: (Command gives line no. and text where "president" is the given file)
 
 
 <img width="1101" alt="Screenshot 2024-02-13 at 7 09 12 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/ea5453f6-a546-4280-bcbd-1b21550d38da">
@@ -137,12 +138,12 @@ This command prints all lines that do not contain the specified pattern in file.
 
 These options provide enhanced functionality to the grep command, allowing for more efficient and flexible text searches in files and directories.
 
-Example 1: 
+Example 1: (Command gives text not containg "The")
 
 <img width="1101" alt="Screenshot 2024-02-13 at 7 14 32 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/610990fb-0ca4-4290-8e38-67affb426b05">
 
 
-Example 2:
+Example 2:(Command gives text not containg "a")
 
 <img width="1101" alt="Screenshot 2024-02-13 at 7 13 59 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/e8a1a553-f5d0-4baf-a74f-f43138c1d56e">
 
