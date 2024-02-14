@@ -69,35 +69,7 @@ The bug was caused by assigning values to the input array arr instead of the new
 
 ## Command: grep
 
-### Option 1: -i (ignore case)
 
-Source: Linux grep Command Usage with Examples
-
-### 1.Example on files:
-```
-grep -i "hello" file.txt
-```
-This command searches for the string "hello" in the file.txt file, ignoring case sensitivity.
-
-### Output:
-```
-Hello world
-hello there
-```
-Explanation: The -i option ensures that the search is case-insensitive, so both "Hello" and "hello" are matched.
-
-### 2.Example on directories:
-```
-grep -ri "error" ./directory
-```
-This command searches for the string "error" recursively in all files within the directory directory, ignoring case sensitivity.
-
-### Output:
-```
-./directory/file1.txt: Error encountered
-./directory/subdirectory/file2.txt: ERROR: Something went wrong
-```
-Explanation: The -r option enables recursive search, while -i makes the search case-insensitive, allowing you to find instances of "error", "Error", "ERROR", etc., in the specified directory and its subdirectories.
 
 
 
