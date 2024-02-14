@@ -1,63 +1,64 @@
 # Lab Report 3 - Bugs and Commands 
 
-## PART1 - Bugs
+## PART1 - Bugs: reversed method not properly reversing array
 
 ### 1. Failure inducing program
 ```
+ import static org.junit.Assert.assertArrayEquals;
+
 import org.junit.Test;
-import static org.junit.Assert.assertEquals;
 
-public class ChatHandlerTest {
+public class ArrayExamplesTest {
 
-    @Test(expected = NullPointerException.class)
-    public void testHandleRequest_NullURI() {
-        ChatHandler handler = new ChatHandler();
-        handler.handleRequest(null);
+    @Test
+    public void testReversedFailure() {
+        int[] input = {1, 2, 3, 4};
+        int[] expected = {4, 3, 2, 1};
+        assertArrayEquals(expected, ArrayExamples.reversed(input));
     }
 }
 ```
-This test checks if the handleRequest() method of ChatHandler throws a NullPointerException when passed a null URI.
+
 
 ### 2. Input that doesn't induce a failure
 ```
-import org.junit.Test;
-import java.net.URI;
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertArrayEquals;
 
-public class ChatHandlerTest {
+import org.junit.Test;
+
+public class ArrayExamplesTest {
 
     @Test
-    public void testHandleRequest_ValidURI() {
-        ChatHandler handler = new ChatHandler();
-        String response = handler.handleRequest(URI.create("http://localhost:4000/chat?username=user&message=hello"));
-        assertEquals("", response); // Assuming the initial chat history is empty
+    public void testReversedSuccess() {
+        int[] input = {1, 2, 3, 4};
+        int[] expected = {1, 2, 3, 4}; // No reversal expected
+        assertArrayEquals(expected, ArrayExamples.reversed(input));
     }
 }
 ```
-This test checks if the handleRequest() method of ChatHandler returns an empty string when passed a valid URI.
 
-   
 ### 3.Symptom
 
 Running the JUnit tests will result in the testHandleRequest_NullURI test failing with a NullPointerException, while the testHandleRequest_ValidURI test will pass successfully.
 
 ### 4.Bug Fix 
 ```
-public String handleRequest(URI url) {
-    if (url == null) {
-        throw new IllegalArgumentException("URI cannot be null");
+static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      newArray[i] = arr[arr.length - i - 1]; // Fixed: assign values to newArray instead of arr
     }
-    // Existing code remains unchanged
+    return newArray;
 }
 ```
 ### 5.Description
-The bug occurs because the handleRequest() method doesn't handle null URIs properly, leading to a NullPointerException when trying to access properties of the URI object. By adding a null check for the URI parameter, we ensure that the method fails fast and provides a more meaningful error message instead of throwing a NullPointerException.
+The bug was caused by assigning values to the input array arr instead of the newly created array newArray. This caused the method to essentially overwrite the original array with the reversed values, resulting in incorrect output. By fixing the assignment to newArray, the method now correctly returns a new array with the elements reversed.
 
 # Part 2 - Researching Commands
 
 ## Command: grep
 
-### Option: -i (ignore case)
+### Option 1: -i (ignore case)
 
 Source: Linux grep Command Usage with Examples
 
