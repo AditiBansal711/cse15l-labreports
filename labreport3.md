@@ -51,7 +51,7 @@ JUNIT Debugger:
 
 <img width="1101" alt="Screenshot 2024-02-13 at 7 24 29 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/7bbcd3bc-64bd-4d04-b6c2-65cc587d16f7">
 
-<img width="1101" alt="Screenshot 2024-02-13 at 7 24 02 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/2321b50d-5861-4618-a407-f201ee3d2f97">
+
 
 
 ### 4.Bug Fix 
