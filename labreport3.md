@@ -48,6 +48,10 @@ The failed test indicate that the reversed method in the ArrayExamples class is 
 In this case, the expected first element of the reversed array is 1 and 4, respectively, but the actual first element is 0.
 This suggests that the method is not correctly reversing the elements of the array, leading to incorrect output.
 
+After bug fix, running the tests, everything passes!
+
+<img width="583" alt="Screenshot 2024-02-21 at 4 47 11 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/a469c87c-e0d7-49de-9592-42fff97a5a8d">
+
 
 
 
