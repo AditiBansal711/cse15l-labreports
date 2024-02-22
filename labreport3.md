@@ -47,9 +47,6 @@ The failed tests indicate that the reversed method in the ArrayExamples class is
 In both cases, the expected first element of the reversed array is 1 and 4, respectively, but the actual first element is 0.
 This suggests that the method is not correctly reversing the elements of the array, leading to incorrect output.
 
-JUNIT Debugger:
-
-<img width="1101" alt="Screenshot 2024-02-13 at 7 24 29 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/7bbcd3bc-64bd-4d04-b6c2-65cc587d16f7">
 
 
 
