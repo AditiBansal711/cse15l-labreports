@@ -30,8 +30,8 @@ public class ArrayExamplesTest {
 
     @Test
     public void testReversedSuccess() {
-        int[] input = {4};
-        int[] expected = {4}; 
+        int[] input = {};
+        int[] expected = {}; 
         assertArrayEquals(expected, ArrayExamples.reversed(input));
     }
 }
