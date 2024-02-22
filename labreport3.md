@@ -83,6 +83,8 @@ The bug was caused by assigning values to the input array arr instead of the new
 ## Command: grep
 
 ### Option 1: -r (Recursive search)
+
+Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/
 ```
 grep -r "pattern" ./technical
 ```
@@ -100,6 +102,8 @@ Example 2: (Command gives location of where "apples" is in the entire directory/
 
 
 ### Option 2: -i (Case-insensitive search)
+
+Source: https://man7.org/linux/man-pages/man1/grep.1.html
 ```
 grep -i "pattern" file.txt
 ```
@@ -118,6 +122,8 @@ Example 2:(Command will give containing "few" without being case sensitive)
 
 
 ### Option 3: -n (Display line numbers)
+
+Source: https://man7.org/linux/man-pages/man1/grep.1.html
 ```
 grep -n "pattern" file.txt
 ```
