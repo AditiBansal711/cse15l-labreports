@@ -20,6 +20,10 @@ After which using ```<j>``` key to move down to line 44, I use the command multi
 
 ## Step 8: Run the tests, demonstrating that they now succeed
 
+<img width="1032" alt="Screenshot 2024-02-27 at 12 55 03 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/33e6bb03-9b57-4f06-89c9-5955fa529508">
+
+I use the following commands ```<javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java>``` and then ```<java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests>``` to compile and run the tests. After the bug fix, both the tests pass.
+
 
 
 
