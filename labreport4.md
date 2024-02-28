@@ -24,6 +24,10 @@ After which using ```<j>``` key to move down to line 44, I use the command multi
 
 I use the following commands ```<javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java>``` and then ```<java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests>``` to compile and run the tests. After the bug fix, both the tests pass.
 
+## Step 9: Commit and push the resulting change to your Github account (you can pick any commit message!)
+
+
+
 
 
 
