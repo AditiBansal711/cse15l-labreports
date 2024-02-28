@@ -14,6 +14,9 @@ I need to git clone lab7 with ssh . After typing ```git clone git@github.com:Adi
 <img width="1032" alt="Screenshot 2024-02-27 at 5 55 48 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/c45fc432-74a7-4a0d-b3bb-7243c9ffe32e">
 
 ## Step 6: Run the tests, demonstrating that they fail
+
+Before compiling, we ```cd lab7``` and press ```<enter>``` to run the java programs in that directory.
+
 <img width="1032" alt="Screenshot 2024-02-27 at 12 49 51 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/6b41e058-0339-43b3-86dd-80c0228b45cc">
 
 ## Step 7: Edit the code file to fix the failing test
