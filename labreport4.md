@@ -22,9 +22,17 @@ After which using ```<j>``` key to move down to line 44, I use the command multi
 
 <img width="1032" alt="Screenshot 2024-02-27 at 12 55 03 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/33e6bb03-9b57-4f06-89c9-5955fa529508">
 
-I use the following commands ```<javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java>``` and then ```<java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests>``` to compile and run the tests. After the bug fix, both the tests pass.
+I use the following commands ```<javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java>``` , ```<enter>```,then ```<java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests>``` and ```<enter>```to compile and run the tests. After the bug fix, both the tests pass.
 
 ## Step 9: Commit and push the resulting change to your Github account (you can pick any commit message!)
+
+After the tests sucessfuly pass, we need to commit these changes into the main branch of our repository, for which we use ```<git commit -a -m "Edited file">``` and then press ```<enter>```. It gives us the following message.
+
+<img width="614" alt="Screenshot 2024-02-27 at 6 58 37 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/f0109c86-7ca5-4c8a-a946-dd9a0d90e8d3">
+
+After running this command, Git will commit all changes to tracked files, and the commit message provided will be associated with the commit.
+
+
 
 
 
