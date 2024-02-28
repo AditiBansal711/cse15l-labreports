@@ -12,8 +12,7 @@
 <img width="1032" alt="Screenshot 2024-02-27 at 12 49 51 PM" src="https://github.com/AditiBansal711/cse15l-labreports/assets/156236164/6b41e058-0339-43b3-86dd-80c0228b45cc">
 
 ## Step 7: Edit the code file to fix the failing test
-
-
-
+To edit the file I type in ```<vim ListExamples.java> ``` in the terminal, which opens the buggy code in vim tutor. 
+After which using ```<j>``` key to move down to line 44, I use the command multiple(43) times, on reaching the bug, I use ```<shift + A >``` to go into editing mode, this command helps us to edit the line on which it was called. Then I use ```<l>``` key to go left and change the code as intended, ie. ```index1 += 1``` is changed to ```index2 += 1```. To get out of the editing mode, I press ```<esc>``` key.
 
 
