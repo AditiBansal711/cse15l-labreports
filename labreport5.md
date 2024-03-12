@@ -39,10 +39,10 @@ This suggests that the issue lies in the calculation part of the program.
 Setup Information:
 
 File & Directory Structure:
-
-css
+```
 project/
     ├── Main.java
+```
 Contents of Main.java before fixing the bug:
 ```
 import java.util.Scanner;
@@ -59,12 +59,15 @@ public class Main {
 }
 ```
 Full Command Line to Trigger the Bug:
-
-
+```
 javac Main.java
 java Main
+```
+
 Description of Fix:
-To fix the bug, we need to ensure that the square operation is performed correctly. Instead of concatenating the input with the result, we should simply print the result of squaring the input. So, we need to remove the concatenation and print only the result. Here's the corrected code:
+To fix the bug, we need to ensure that the square operation is performed correctly. 
+Instead of concatenating the input with the result, we should simply print the result of squaring the input.
+So, we need to remove the concatenation and print only the result. Here's the corrected code:
 
 ```
 import java.util.Scanner;
