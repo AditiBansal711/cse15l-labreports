@@ -28,7 +28,7 @@ css
 project/
     ├── Main.java
 Contents of Main.java before fixing the bug:
-
+```
 import java.util.Scanner;
 
 public class Main {
@@ -41,6 +41,7 @@ public class Main {
         scanner.close();
     }
 }
+```
 Full Command Line to Trigger the Bug:
 
 css
@@ -50,8 +51,7 @@ java Main
 Description of Fix:
 To fix the bug, we need to ensure that the square operation is performed correctly. Instead of concatenating the input with the result, we should simply print the result of squaring the input. So, we need to remove the concatenation and print only the result. Here's the corrected code:
 
-java
-Copy code
+```
 import java.util.Scanner;
 
 public class Main {
@@ -64,6 +64,7 @@ public class Main {
         scanner.close();
     }
 }
+
 After making this change, the program should correctly square the input and print the result without concatenating it with the input.
 
 
