@@ -78,7 +78,7 @@ public class Main {
         System.out.print("Enter a number: ");
         int input = scanner.nextInt();
         int result = input * input;
-        System.out.println("Result: " + result); // Remove concatenation with input
+        System.out.println(result); // Remove concatenation with input
         scanner.close();
     }
 }
