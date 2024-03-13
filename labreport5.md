@@ -85,7 +85,9 @@ public class Main {
 ```
 After making this change, the program should correctly square the input and print the result without concatenating it with the input.
 
+# Part2 - Reflection 
 
+I have learnt so much in the second half of the quater, using vim in the terminal is so cool, being able to not use visual studio code or sublime and still code code and run it. I found adding emojis to code interesting, I felt Icould take it up as a project to build a model like whatsapp, ofcourse whatsapp is more advanced in many ways, but what we did in lab resonanted with the chat messenger. I leqarnt java debugger and it's uses, at this point debugging 500-600 lines is easy but when dealing with thousands of line jdb is gonna be helpful.
 
 
 
